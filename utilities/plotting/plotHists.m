@@ -45,9 +45,3 @@ function h = plotHists(results, options)
         title(sprintf('%s',fitNames{i}))
     end
 end
-
-function isFigure(figure)
-  if ~(isnumeric(figure) || isa(figure, 'matlab.ui.Figure'))
-    error("'figure' must be a figure number or a figure object.")
-  end
-end
